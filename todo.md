@@ -8,7 +8,7 @@
 ---
 
 ## Week 1 (Oct 18 - Oct 24)
-- [X] **Everyone**: Choose topics for all stories.
+- [ ] **Everyone**: Choose topics for all stories.
 - [ ] **Everyone**: Initial research on topics.
 - [ ] **Everyone**: Ensure software and libraries are set up.
 
