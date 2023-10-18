@@ -8,9 +8,9 @@
 ---
 
 ## Week 1 (Oct 18 - Oct 24)
-- [ ] **Majed**: Choose topics for all stories.
-- [ ] **Mathias**: Initial research on topics.
-- [ ] **Markus**: Ensure software and libraries are set up.
+- [X] **Everyone**: Choose topics for all stories.
+- [ ] **Everyone**: Initial research on topics.
+- [ ] **Everyone**: Ensure software and libraries are set up.
 
 ---
 
