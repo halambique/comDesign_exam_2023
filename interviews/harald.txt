@@ -1,0 +1,30 @@
+the paradox may be that the debate is somewhat shifted from where it should be - attention economy, social media and the it industry as a whole. because of the data and energy used in machine learning, it's often easy to point to this as a problem, while in sum, machine learning actually increases emissions by
+
+
+one of our customers has tens of thousands of servers, sampling every second - meaning they process time series data points every year approximately 10 terrabytes of data every year. all this data CAN be incredibly valuable to optimize industrial processes.
+
+another application is the quality of cheese - analyzing data about the milk and other råvarer, vibrations in the cheese-making processes, one can predict the quality of the product, planning maintenance etc.
+
+this is not what is commonly called IoT data - these sensors have been picking up signals for years before both machine learning and smartphone controlled light-bulbs, but the application have recently been improved
+
+in certain applications, we have documented reduction in waste of about 60%, and greenhouse gas emissions by 40%. and while our data processing requires energy, i have no doubt that responsible use can help combat climate change and contribute to ecological safey
+
+of course we always strive to increase the efficiency of our models, both for economical and ecological reasons. but in sum, we are helping industry and
+
+what we are working with is often data that is being logged anyway, and trying to create value from it. the amount of data is of such a magnitude that humans would not be able to spot the patterns.
+
+though the field of ai is becoming accessible to any lay-person with an internet connection, behind the scenes there is still a lot of trial and error.
+
+another point worth mentioning is the fact that diminishing returns are not samlebånd??
+
+can processes peak?
+there are of course varying degrees of
+
+
+cheese vat - one temp sensor, the more data, the more useful the models will be
+
+in fisheries, hyperspectral imaging is used to measure everything from water quality to fatty tissues in individual salmon, but getting value from this data requires machine learning. a hyperspectral camera can pick up 256 bands of color, the human eye can process visible light in three.
+
+better sensors will continue to generate more and more data, so the resources being used to process this and optimizing will inevitably increase.
+
+not all applications are worth it. imagine hanging a picture on the wall with a 10 inch nail and buying a 10kg sledgehammer to get the job done - this is obviously not an efficient way of using it, so those of us working with this continuously attempt to make th
