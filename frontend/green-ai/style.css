@@ -11,7 +11,7 @@ body{
 }
 
 .parallax-container {
-  height: 1100vh; 
+  height: 100%; 
   overflow: hidden;
   position: relative;
 }
@@ -27,7 +27,7 @@ body{
 }
 
 .text-box {
-  margin-bottom: 1000px;
+  margin-bottom: 50rem;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 10px;
@@ -40,33 +40,34 @@ body{
 }
 
 #box1{
+  margin: auto;
+  margin-bottom: 800px;
   margin-top: 300px;
-  margin-left: 350px;
   max-width: 50vw;
 }
 
 #box2{
-  margin-left: 750px;
+  margin-left: 10%;
 }
 
 #box3{
-  margin-left: 250px;
+  margin-left: 60%;
 }
 
 #box4{
-  margin-left: 750px;
+  margin-left: 10%;
 }
 
 #box5{
-  margin-left: 250px;
+  margin-left: 60%;
 }
 
 #box6{
-  margin-left: 750px;
+  margin-left: 10%;
 }
 
 #box7{
-  margin-left: 250px;
+  margin-left: 60%;
 }
 
 .visible {
