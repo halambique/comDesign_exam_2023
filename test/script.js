@@ -1,59 +1,67 @@
-let target = 0;
-let current = 0;
-let ease = 0.075;
+document.addEventListener("DOMContentLoaded", function () {
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
 
-const slider = document.querySelector(".slider");
-const slideWrapper = document.querySelector(".slider-wrapper");
-const slides =  document.querySelectorAll(".slide");
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
 
-let maxScroll = slideWrapper.offsetWidth - window.innerWidth
+  const rows = document.querySelectorAll(".row");
 
-function lerp(start, end, factor){
-  return start + (end - start) * factor
-}
-
-function updateScaleAndPosition(){
-  slides.forEach((slide) => {
-    const rect = slide.getBoundingClientRect();
-    const centerPosition = (rect.left + rect.right) / 2;
-    const distanceFromCenter = centerPosition - window.innerWidth / 2;
-
-    let scale, offsetX
-    if(distanceFromCenter > 0){
-      scale = Math.min(1.75, 1 + distanceFromCenter / window.innerWidth);
-      offsetX = (scale-1) * 300
-    }else{
-      scale = Math.max(
-        0.5,
-        1 - Math.abs(distanceFromCenter) / window.innerWidth
-      )
-      offsetX = 0;
+  rows.forEach((row) => {
+    if (isInViewport(row)) {
+      const img = row.querySelector("img");
+      
+      if (row.querySelector(".img-container.left")) {
+        gsap.to(img, {
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        });
+      } else {
+        gsap.to(img, {
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        });
+      }
     }
-    
-    gsap.set(slide,{scale: scale, x: offsetX})
-  })
-}
+  });
 
-function update(){
-  current = lerp(current, target, ease);
+  gsap.utils.toArray(".img-container.right img").forEach((img) => {
+    gsap.to(img, {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+      scrollTrigger: {
+        trigger: img,
+        start: "top 75%",
+        end: "bottom 70%",
+        scrub: true,
+      },
+    });
+  });
 
-  gsap.set(".slider-wrapper",{
-    x: -current,
-  })
+  gsap.utils.toArray(".img-container.left img").forEach((img) => {
+    gsap.to(img, {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+      scrollTrigger: {
+        trigger: img,
+        start: "top 75%",
+        end: "bottom 70%",
+        scrub: true,
+      },
+    });
+  });
 
-  updateScaleAndPosition();
-
-  requestAnimationFrame(update);
-}
-
-window.addEventListener("resize", () =>{
-  maxScroll = slideWrapper.offsetWidth - window.innerWidth
-})
-
-window.addEventListener("wheel", (e) =>{
-  target += e.deltaY
-  target = Math.max(0, target)
-  target = Math.min(maxScroll, target)
-})
-
-update();
+  gsap.utils.toArray(".img-container p").forEach((text) => {
+    gsap.from(text, {
+      opacity: 0,
+      y: 20,
+      scrollTrigger: {
+        trigger: text,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+});
