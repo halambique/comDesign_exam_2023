@@ -17,7 +17,7 @@ body{
 }
 
 .parallax-image {
-  background-image: url('img/forrest.jpg');
+  background-image: url('img/background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -59,39 +59,24 @@ img{
   margin-bottom: 100vh;
 }
 
-#box2{
+#box2,
+#box4,
+#box6,
+#box8{
   margin-bottom: 100vh;
   margin-left: 10%;
 }
 
-#box3{
-  margin-bottom: 100vh;
-  margin-left: 20%;
-}
-
-#box4{
-  margin-bottom: 100vh;
-  margin-left: 10%;
-}
-
-#box5{
-  margin-bottom: 100vh;
-  margin-left: 20%;
-}
-
-#box6{
-  margin-bottom: 100vh;
-  margin-left: 10%;
-}
-
+#box3,
+#box5,
 #box7{
   margin-bottom: 100vh;
   margin-left: 60%;
 }
 
-#box8{
-  margin-bottom: 100vh;
-  margin-left: 10%;
+#box9 {
+  margin: auto;
+  max-width: 100%;
 }
 
 .visible {
@@ -99,7 +84,30 @@ img{
   transform: translateY(0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1600px){
+  #box1{
+    margin-top: 20%;
+  }
+
+  #box3,
+  #box5,
+  #box7{
+    margin-bottom: 100vh;
+    margin-left: 60%;
+  }
+
+  .text-box img {
+    margin-left: 110rem;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  #box1{
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
 
   .text-box img {
     display: block;
@@ -115,45 +123,21 @@ img{
     margin-bottom: 100vh;
   }
 
-  #box2{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box3{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box4{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box5{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box6{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box7{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-
+  #box2,
+  #box4,
+  #box6,
   #box8{
     margin: auto;
     margin-bottom: 100vh;
     max-width: 60%;
   }
+  
+  #box3,
+  #box5,
+  #box7{
+    margin: auto;
+    margin-bottom: 100vh;
+    max-width: 60%;
+  }
 }
+

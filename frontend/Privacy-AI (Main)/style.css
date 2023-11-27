@@ -17,7 +17,7 @@ body{
 }
 
 .parallax-image {
-  background-image: url('img/forrest.jpg');
+  background-image: url('img/background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -91,7 +91,12 @@ img{
 #box25,
 #box27{
   margin-bottom: 100vh;
-  margin-left: 20%;
+  margin-left: 60%;
+}
+
+#box29 {
+  margin: auto;
+  max-width: 100%;
 }
 
 .visible {
@@ -99,7 +104,25 @@ img{
   transform: translateY(0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1400px) {
+  .text-box img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 80rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .text-box img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 120rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
 
   .text-box img {
     display: block;
@@ -115,43 +138,33 @@ img{
     margin-bottom: 100vh;
   }
 
-  #box2{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box3{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box4{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box5{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box6{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-  
-  #box7{
-    margin: auto;
-    margin-bottom: 100vh;
-    max-width: 60%;
-  }
-
-  #box8{
+  #box2,
+  #box4,
+  #box6,
+  #box8,
+  #box10,
+  #box12,
+  #box14,
+  #box16,
+  #box18,
+  #box20,
+  #box22,
+  #box24,
+  #box26,
+  #box28,
+  #box3, 
+  #box5,
+  #box7,
+  #box9,
+  #box11,
+  #box13,
+  #box15,
+  #box17,
+  #box19,
+  #box21,
+  #box23,
+  #box25,
+  #box27{
     margin: auto;
     margin-bottom: 100vh;
     max-width: 60%;
